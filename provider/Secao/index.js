@@ -16,19 +16,19 @@ export const SecaoProvider = ({ children }) => {
       if (value >= 1 & value < 9){
         return setSecao("A seção é: 0.75mm², porém a seção mínima admissível é 1,5 mm²")
       }
-      else if (value >= 1 & value < 11){
+      else if (value >= 1 & value <= 11){
         return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
-      else if (value >= 1 & value < 14){
+      else if (value >= 1 & value <= 14){
         return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
-      else if (value >= 1 & value < 17.5){
+      else if (value >= 1 & value <= 17.5){
         return setSecao("A seção é: 2.5mm² para um disjuntor de 20A")
       }
-      else if (value >= 1 & value < 24){
+      else if (value >= 1 & value <= 24){
         return setSecao("A seção é: 2.5mm² para um disjuntor de 25A")
       }
-      else if (value >= 1 & value < 32){
+      else if (value >= 1 & value <= 32){
         return setSecao("A seção é: 4mm² para um disjuntor de 32A")
       }
       else if (value >= 1 & value <= 41){
@@ -49,22 +49,22 @@ export const SecaoProvider = ({ children }) => {
     }
 
     else{
-      if (value >= 1 & value < 1143){
+      if (value >= 1 & value <= 1143){
         return setSecao("A seção é: 0.75mm², porém a seção mínima admissível é 1,5 mm²")
       }
-      else if (value >= 1 & value < 1397){
+      else if (value >= 1 & value <= 1397){
         return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
-      else if (value >= 1 & value < 1778){
+      else if (value >= 1 & value <= 1778){
         return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
-      else if (value >= 1 & value < 2222.5){
+      else if (value >= 1 & value <= 2222.5){
         return setSecao("A seção é: 2.5mm² para um disjuntor de 20A")
       }
-      else if (value >= 1 & value < 3048){
+      else if (value >= 1 & value <= 3048){
         return setSecao("A seção é: 2.5mm² para um disjuntor de 25A")
       }
-      else if (value >= 1 & value < 4064){
+      else if (value >= 1 & value <= 4064){
         return setSecao("A seção é: 4mm² para um disjuntor de 32A")
       }
       else if (value >= 1 & value <= 5207){
