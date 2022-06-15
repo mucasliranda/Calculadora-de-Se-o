@@ -14,55 +14,73 @@ export const SecaoProvider = ({ children }) => {
 
     else if(type === "corrente"){
       if (value >= 1 & value < 9){
-        return setSecao("A seção é: 0.5mm², porém a seção mínima admissível é 1,5 mm²")
-      }
-      else if (value >= 1 & value < 11){
         return setSecao("A seção é: 0.75mm², porém a seção mínima admissível é 1,5 mm²")
       }
+      else if (value >= 1 & value < 11){
+        return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
+      }
       else if (value >= 1 & value < 14){
-        return setSecao("A seção é: 1mm², porém a seção mínima admissível é 1,5 mm²")
+        return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
       else if (value >= 1 & value < 17.5){
-        return setSecao("A seção é: 1.5mm². E a corrente nominal do disjuntor é: 10A ")
+        return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
       else if (value >= 1 & value < 24){
-        return setSecao("A seção é: 2.5mm². E a corrente nominal do disjuntor é: 15A")
+        return setSecao("A seção é: 2.5mm² para um disjuntor de 25A")
       }
       else if (value >= 1 & value < 32){
-        return setSecao("A seção é: 4mm². E a corrente nominal do disjuntor é: 20A")
+        return setSecao("A seção é: 4mm² para um disjuntor de 32A")
       }
       else if (value >= 1 & value <= 41){
-        return setSecao("A seção é: 6mm². E a corrente nominal do disjuntor é: 25A")
+        return setSecao("A seção é: 10mm² para um disjuntor de 50A")
       }
-      else if (value < 1 || value > 41){
-        return setSecao("Esse valor não é destinado á residências")
+      else if (value >= 1 & value <= 57){
+        return setSecao("A seção é: 16mm² para um disjuntor de 63A")
+      }
+      else if (value >= 1 & value <= 76){
+        return setSecao("A seção é: 25mm² para um disjuntor de 80A")
+      }
+      else if (value >= 1 & value <= 101){
+        return setSecao("A seção é: 35mm² para um disjuntor de 125A")
+      }
+      else if (value < 1 || value > 101){
+        return setSecao("Este valor não é adequado para uma sala de aula!")
       }
     }
 
     else{
       if (value >= 1 & value < 1143){
-        return setSecao("A seção é: 0.5mm², porém a seção mínima admissível é 1,5 mm²")
-      }
-      else if (value >= 1 & value < 1397){
         return setSecao("A seção é: 0.75mm², porém a seção mínima admissível é 1,5 mm²")
       }
+      else if (value >= 1 & value < 1397){
+        return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
+      }
       else if (value >= 1 & value < 1778){
-        return setSecao("A seção é: 1mm², porém a seção mínima admissível é 1,5 mm²")
+        return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
       else if (value >= 1 & value < 2222.5){
-        return setSecao("A seção é: 1.5mm². E a corrente nominal do disjuntor é: 10A ")
+        return setSecao("A seção é: 2.5mm² para um disjuntor de 20A")
       }
       else if (value >= 1 & value < 3048){
-        return setSecao("A seção é: 2.5mm². E a corrente nominal do disjuntor é: 15A")
+        return setSecao("A seção é: 2.5mm² para um disjuntor de 25A")
       }
       else if (value >= 1 & value < 4064){
-        return setSecao("A seção é: 4mm². E a corrente nominal do disjuntor é: 20A")
+        return setSecao("A seção é: 4mm² para um disjuntor de 32A")
       }
       else if (value >= 1 & value <= 5207){
-        return setSecao("A seção é: 6mm². E a corrente nominal do disjuntor é: 25A")
+        return setSecao("A seção é: 10mm² para um disjuntor de 50A")
       }
-      else if (value <= 1 || value > 5207){
-        return setSecao("Esse valor não é destinado á residências")
+      else if (value >= 1 & value <= 7239){
+        return setSecao("A seção é: 16mm² para um disjuntor de 63A")
+      }
+      else if (value >= 1 & value <= 9652){
+        return setSecao("A seção é: 25mm² para um disjuntor de 80A")
+      }
+      else if (value >= 1 & value <= 12827){
+        return setSecao("A seção é: 35mm² para um disjuntor de 125A")
+      }
+      else if (value <= 1 || value > 12827){
+        return setSecao("Este valor não é adequado para uma sala de aula!")
       }
     }
 
