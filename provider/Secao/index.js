@@ -23,7 +23,7 @@ export const SecaoProvider = ({ children }) => {
         return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
       }
       else if (value >= 1 & value < 17.5){
-        return setSecao("A seção é: 1.5mm² para um disjuntor de 16A")
+        return setSecao("A seção é: 2.5mm² para um disjuntor de 20A")
       }
       else if (value >= 1 & value < 24){
         return setSecao("A seção é: 2.5mm² para um disjuntor de 25A")
